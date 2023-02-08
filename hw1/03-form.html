@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/03-form.css" /> -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" /> 
   </head>
   <body>
     <main>
-      <form action="">
+      <form action="#" class="form">
         <h1>Registration Form</h1>
         <!-- Add your code here -->
         <p><label for="username">Username: </label> 
-        <input type="text" id="username" size="15" maxlength="30" required="required"/></p>
+        <input type="text" id="username" size="20" maxlength="30" required="required" class="form-element"/></p>
         
         <p><label for="email">Email: </label> 
-          <input type="text" id="email" size="15" maxlength="30" required="required"/></p>
+          <input type="email" id="email" size="20" maxlength="30" required="required" class="form-element"/></p>
         <p><label for="password">Password: </label>
-          <input type="password" id="password" maxlength="30" required="required"/></p>
+          <input type="password" id="password" size="20" maxlength="30" required="required" class="form-element"/></p>
         
-        <fieldset>
-          <legend>Would you like to sign up for the newsletter? </legend>
-          <input type="radio" id="yes_no" value="yes"><label for="yes_no">Yes, sign me up</label>
-          <input type="radio" id="yes_no" value="no"><lable for="yes_no"> No, thankyou </lable>
-
+          <fieldset style="border: none; float: left; padding-top: 10px; padding-left: 0; padding-bottom: 10px;">
+          <legend> Would you like to sign up for the newsletter? </legend>
+          
+          <label><input type="radio"  name="yes_no_rd" value="yes"/>Yes, sign me up</label><br>
+          <label><input type="radio"  name="yes_no_rd" value="no"/> No, thank you</label>
         </fieldset>
+        
         <p>
         <label for="date_time">Date: </label>
-        <input type="date" id="date_time">
+        <input type="date" id="date_time" style="width: 175px; text-align: left;" class="form-element">
         </p>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="submit" value="Submit" class="btn-primary">
+        <input type="reset" value="Reset" class="btn">
+        
 
       </form>
     </main>

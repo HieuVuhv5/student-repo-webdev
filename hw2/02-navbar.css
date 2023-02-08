@@ -6,11 +6,58 @@ body {
 }
 
 .nav-list {
+  margin-inline: 5% 10%;
+  writing-mode: horizontal-tb;
+  background-color: white; 
+   list-style-type: none;
+   text-align: left;
+  display: inline-block;
+  
+   margin: 0;
+   padding: 0;
 }
+
+
+
+
 
 .list-item {
   background-color: var(--green);
+  display:inline-block;
+  font-size: 20px;
+  
+  float:left;
 }
 
 .nav-link {
+  background-color: var(--green);
+  padding: 25px 25px 25px 25px;
+  display: block;
+  
+ 
+  font-size: 20px;
+  
+  color:var(--white);
+}
+
+li a {
+  text-decoration:none;
+  
+}
+
+li a {
+  text-decoration:none;
+  
+}
+
+a:hover{
+  color: var(--black);
+  background-color: var(--orange);
+  display: block;
+ 
+}
+a:visited{
+  //color: var(--black);
+  display: block;
+
 }

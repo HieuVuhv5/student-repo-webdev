@@ -4,3 +4,22 @@ If you would prefer, you can delete them and use your own classes and style defi
 .container {
   width: 50vw;
 }
+#center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.para p::first-line{
+  
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+   
+}
+

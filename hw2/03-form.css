@@ -2,16 +2,60 @@
 If you would prefer, you can delete them and use your own classes and style declarations. */
 
 .form {
+    width:270px;
+    padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid #555;
+    border-radius: 4px;
+    float:center;
 }
 
 .form-element {
+    align-items: right;
+    text-align: right;
+    float: right;
+   
 }
 
 .btn {
+    width: 122px;
+    margin-top: 15px;
+    border-color: val(--green);
+    color: var(--green);
+    padding: 3px 3px;
 }
 
 .btn-primary {
+    width: 122px;
+    margin-top: 15px;
+    padding: 3px 3px;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 3px;
+    border-color: var(--green);
 }
 
 .btn-secondary {
+    width: 122px;
+    margin-top: 15px;
+    padding: 3px 3px;
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 3px;
+    border-color: var(--black);
+
+}
+
+.btn-primary:hover{
+    width: 122px;
+    margin-top: 15px;
+    padding: 3px 3px;
+    color: var(--black);
+    background-color: var(--orange);
+    border-radius: 3px;
+    border-color: var(--green);
+
 }

@@ -8,6 +8,178 @@ h1 {
 }  
 
 /* Code for exercise 01-flex */
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    justify-content: flex-end;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+   
+    
+    /* Then we define how is distributed the remaining space */
+   
+    background-color: var(--purple);
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    
+  }
+  
+  .flex-item {
+    background: var(--purple);
+   
+   
+    
+  }
+  a {
+    text-decoration:none;
+    display: inline-block;
+    padding:20px;
+    color:var(--white);
+    background-color: var(--purple);
+    font-size: 30px;
+    
+  }
+  a:hover{
+    color: var(--white);
+    background-color: var(--green);    
+  }
+  a:active{
+    color: var(--white);
+    background-color: var(--orange);    
+  }
+  
+  a:focus{
+    color: var(--white);
+    border-style: outset;
+    border-color: var(--orange);  
+
+  }
+
+
 
 /* Code for exercise 02-grid */
+/* set up grid container for breakpoints above 992px */
+/* set up the default grid container */
+.item1 {
+    grid-area: item1;
+  }
+  .item2 {
+    grid-area: item2;
+  }
+  .item3 {
+    grid-area: item3;
+  }
+  .item4 {
+    grid-area: item4;
+  }
+  .item5 {
+    grid-area: item5;
+  }
+  .item6 {
+    grid-area: item6;
+  }
+  .item7 {
+    grid-area: item7;
+  }
 
+
+.grid-container {
+    display: grid;
+    height: 97vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      'item1'
+      'item2'
+      'item6'
+      'item3'
+      'item4'
+      'item7'
+          
+  }
+  .item5{
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+        gap: 10px;
+    grid-template-areas: 
+    "item1 item1 "
+    "item2 item2 "
+    
+    "item6 item6 "
+    "item3 item4 "
+    "item7 item7 ";
+        gap: 10px;
+
+       }
+    
+       .item1 {
+        grid-column: span 2;
+       }
+    
+       .item2 {
+        grid-column: span 2;
+       }
+       .item6 {
+        grid-column: span 2;
+       }
+       .item7 {
+        grid-column: span 2;
+       }
+       .item5 {
+        display: none;
+       }
+
+    }
+
+
+@media (min-width: 992px) {
+.grid-container {
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+    grid-template-areas: 
+    "item1 item1 item1"
+     "item2 item2 item2"
+     "item3 item4 item5"
+     "item6 item6 item6"
+     "item7 item7 item7";
+    gap: 10px;
+   }
+
+   .item1 {
+    grid-column: span 3;
+   }
+
+   .item2 {
+    grid-column: span 3;
+   }
+   .item6 {
+    grid-column: span 3;
+   }
+   .item7 {
+    grid-column: span 3;
+   }
+   .item5 {
+    display: block;
+   }
+   
+}
+
+
+
+  

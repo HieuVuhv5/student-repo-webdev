@@ -5,12 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <script defer src="05-form.js"></script>
+    <script defer src="03-form.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" /> 
   </head>
   <body>
     <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
+      <form action="#" class="form" >
+        <h1>Registration Form</h1>
+        <!-- Add your code here -->
+        <p><label for="username">Username: </label> 
+        <input type="text" id="username" size="20" maxlength="30"  class="form-element"/></p>
+        
+        <p><label for="email">Email: </label> 
+          <input type="email" id="email" size="20" maxlength="30"  class="form-element"/></p>
+        <p><label for="password">Password: </label>
+          <input type="password" id="password" size="20" maxlength="30"  class="form-element"/></p>
+        
+          <fieldset style="border: none; float: left; padding-top: 10px; padding-left: 0; padding-bottom: 10px;">
+          <legend> Would you like to sign up for the newsletter? </legend>
+          
+          <label><input type="radio"  name="yes_no_rd" value="Yes"/>Yes, sign me up</label><br>
+          <label><input type="radio"  name="yes_no_rd" value="No"/> No, thank you</label>
+        </fieldset>
+        
+        <p>
+        <label for="date_time">Date: </label>
+        <input type="date" id="date_time" style="width: 175px; text-align: left;" class="form-element">
+        </p>
+        <input type="submit" value="Submit" class="btn-primary" >
+        <input type="reset" value="Reset" class="btn">
+        
+
       </form>
     </main>
   </body>

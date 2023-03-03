@@ -43,7 +43,7 @@ form.addEventListener("submit", event => {
     if(flag_check == 0 )
         {
             //console.log("You must enter some data to submit this form");
-            console.warn("You must enter some data to submit this form")
+            console.warn("You must enter some data to submit this form");
         }
     else
     {

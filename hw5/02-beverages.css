@@ -8,7 +8,81 @@
 }
 
 .figure:hover {
-  border: 0.5rem solid var(--purple);
-  background-color: var(--purple);
+  border: 0.5rem solid var(--white);
+  background-color: var(--white);
   color: var(--white);
+}
+
+
+.grid-container {
+  display: grid;
+  background-color: white;
+     gap: 5px;
+  grid-template-areas:
+    'item';
+        
+}
+
+@media (min-width: 768px) {
+
+  .grid-container {
+    display: grid;
+    background-color: white;
+   
+     gap: 5px;
+    grid-template-areas:
+      'item item';
+          
+  }
+
+}
+
+@media (min-width: 1024px){
+  .grid-container {
+    display: grid;
+    background-color: white;
+    
+     gap: 0px;
+    grid-template-areas:
+      'item item item';
+          
+  }
+
+
+}
+
+
+.grid-item{
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-weight: bold;
+}
+
+.img_cl{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 270px;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration:none;
+  display: inline-block;
+  
+  color:var(--black);
+  background-color: var(--white);
+  padding: 8px 8px 30px 8px;
+  
+}
+a:hover{
+  color: var(--white);
+  background-color: var(--purple);    
+}
+h2 {
+  font-size: 16px;
+  font-weight: bold;
 }
